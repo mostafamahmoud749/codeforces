@@ -1,3 +1,8 @@
+import sys
+
+sys.stdin = open("div7.in", "r")
+sys.stdout = open("div7.out", "w")
+
 n = int(input())
 prefix_sum = [0] * (n + 1)
 
