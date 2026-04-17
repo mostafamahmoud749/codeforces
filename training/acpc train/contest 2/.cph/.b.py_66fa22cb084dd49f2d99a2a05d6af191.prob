@@ -1,0 +1,1 @@
+{"name":"Local: b","url":"c:\\Work\\codeforces\\training\\acpc train\\contest 2\\b.py","tests":[{"id":1776284852752,"input":"3\n3\n120\n5\n11011\n6\n600005","output":"3\n6\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Work\\codeforces\\training\\acpc train\\contest 2\\b.py","group":"local","local":true}
