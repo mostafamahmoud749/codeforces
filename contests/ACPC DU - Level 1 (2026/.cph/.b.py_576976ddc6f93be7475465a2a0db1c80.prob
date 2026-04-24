@@ -1,0 +1,1 @@
+{"name":"Local: b","url":"c:\\Work\\codeforces\\contests\\ACPC DU - Level 1 (2026\\b.py","tests":[{"id":1776971503481,"input":"3\n2 1 2\n","output":"2\n"},{"id":1776971568864,"input":"2\n3 3","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Work\\codeforces\\contests\\ACPC DU - Level 1 (2026\\b.py","group":"local","local":true}
