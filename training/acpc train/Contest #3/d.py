@@ -1,4 +1,2 @@
-t=int(input())
-for _ in range(t):
-    n=int(input())
-    a=list(map(int,input().split()))
+n=int(input())
+print((2**n)%(10**9+7))
