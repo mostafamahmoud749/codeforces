@@ -1,0 +1,1 @@
+{"name":"Local: h","url":"c:\\Work\\codeforces\\training\\acpc train\\recursion\\h.py","tests":[{"id":1779363970342,"input":"2\n1 2 3 4 5 6 7 8 9 10\n200\n1 2 3 4 5 6 7 8 9 10\n100\n\n\n\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Work\\codeforces\\training\\acpc train\\recursion\\h.py","group":"local","local":true}

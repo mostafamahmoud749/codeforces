@@ -1,11 +1,9 @@
 def get(idx, cw):
     if idx == n or cw == 0:
         return 0
-    # choice 1: leave
-    res = get(idx + 1, cw)
-    # choice 2: take
-    if items[idx][1] <= cw:
-        res = max(res, get(idx + 1, cw - items[idx][1]) + items[idx][0])
+    res=get(idx+1,cw)
+    if items[idx][1]<=cw:
+        res=max(res,get(idx+1,cw-items[idx][1])+items[idx][0])
     return res
 
 n,w=map(int,input().split())
