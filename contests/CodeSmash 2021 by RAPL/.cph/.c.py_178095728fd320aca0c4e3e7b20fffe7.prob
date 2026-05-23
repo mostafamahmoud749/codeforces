@@ -1,0 +1,1 @@
+{"name":"Local: c","url":"c:\\Work\\codeforces\\contests\\CodeSmash 2021 by RAPL\\c.py","tests":[{"id":1779477055996,"input":"5\n138 1 53\n100 1 100\n8 2 6\n30 2 10\n23 12 19\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Work\\codeforces\\contests\\CodeSmash 2021 by RAPL\\c.py","group":"local","local":true}
