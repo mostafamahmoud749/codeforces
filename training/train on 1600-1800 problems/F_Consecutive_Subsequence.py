@@ -1,34 +1,35 @@
 import sys
 sys.setrecursionlimit(300000)
+from _bisect import bisect_right
 
-def solve(indx,l):
-    if indx==n:
+def solve(indx):
+    if indx>=n:
         return []
-    if (indx,l) in db:
-        return db[(indx,l)]
+    if dp[indx]!=-1:
+        return dp[indx]
     ch1=[]
     ch2=[]
-    ch3=[]
-    if a[indx]-1==l:
-        ch1=[indx+1]+solve(indx+1,a[indx])
-    ch2=solve(indx+1,l)
-    if l==-1:
-        ch3=[indx+1]+solve(indx+1,a[indx])
-    m=max(len(ch1),len(ch2),len(ch3))
-    res=0
-    if len(ch1)==m:
+    if a[indx]+1 in exist:
+        l=exist[a[indx]+1]
+        v=bisect_right(l,indx)
+        if v<len(l):
+            ch1=[indx+1]+solve(l[v])
+    ch2=solve(indx+1)
+    if len(ch1)>=len(ch2):
         res=ch1
-    elif len(ch2)==m:
-        res=ch2
-    else:
-        res=ch3
-    db[(indx,l)]=res
+    else:res=ch2
+    dp[indx]=res
     return res
 
 
 n=int(input())
 a=list((map(int,input().split())))
-db={}
-res=solve(0,-1)
+dp=[-1]*(n+1)
+exist={}
+for i in range(n):
+    if a[i] not in exist:
+        exist[a[i]]=[]
+    exist[a[i]].append(i)
+res=solve(0)
 print(len(res))
 print(*res)

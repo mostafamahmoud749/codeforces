@@ -1,0 +1,1 @@
+{"name":"Local: b","url":"c:\\Work\\codeforces\\training\\acpc train\\bitmask\\b.py","tests":[{"id":1781028710793,"input":"5\n3\n1 2 5\n3\n1 2 3\n4\n0 1 2 3\n4\n1 2 2 3\n1\n1\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Work\\codeforces\\training\\acpc train\\bitmask\\b.py","group":"local","local":true}
