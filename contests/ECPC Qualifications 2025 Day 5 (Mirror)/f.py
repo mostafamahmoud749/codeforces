@@ -1,0 +1,4 @@
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    print((n.bit_length()-1)*2)

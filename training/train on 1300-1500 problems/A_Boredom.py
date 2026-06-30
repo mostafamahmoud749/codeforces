@@ -1,18 +1,22 @@
 n=int(input())
 a=list(map(int,input().split()))
-db={}
-res=0
-for i in range(n):
-    db[a[i]]=db.get(a[i],0)+1
-while len(db)>0:
-    cur=-float("inf")
-    el=""
-    for key in db:
-        if cur<(db[key]*key)-((db.get(key-1,0)*(key-1)+db.get(key+1,0)*(key+1))):
-            el=key
-            cur=(db[key]*key)-((db.get(key-1,0)*(key-1)+db.get(key+1,0)*(key+1)))
-    res+=db[el]*el
-    db.pop(el-1,None)
-    db.pop(el+1,None)
-    db.pop(el)
-print(res)
+m=max(a)
+
+freq=[0]*m
+for i in a:
+    freq[i-1]+=1
+
+dp=[0]*m
+dp[-1]=m*freq[-1]
+
+for i in range(m-2,-1,-1):
+    ch1=dp[i+1]
+    ch2=(i+1)*freq[i]
+    if i<len(dp)-2:
+        ch2+=dp[i+2]
+    dp[i]=max(ch1,ch2)
+
+# print(a)
+# print(dp)
+# print(freq)
+print(dp[0])

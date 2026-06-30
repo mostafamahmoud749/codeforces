@@ -1,29 +1,25 @@
 import sys
 sys.setrecursionlimit(200000)
 
-def dfs(u):
-    visted[u] = 1
-    for v in ver[u]:
-        if visted[v] == 0:
-            dfs(v)
+def dfs(v):
+    visited[v]=True
+    cres=a[v-1]
+    for i in per[v]:
+        if not visited[i]:
+            cres=min(cres,dfs(i))
+    return cres
 
 n,m=map(int,input().split())
 a=list(map(int,input().split()))
-ver=[[] for i in range(n)]
-visted=[0]*n
-per=[]
-for i in range(n):
-    per.append([a[i],i])
-per.sort()
-res=0
+per=[[] for _ in range(n+1)]
+visited=[False]*(n+1)
 for i in range(m):
-    u,v=map(int,input().split())
-    u-=1
-    v-=1
-    ver[u].append(v)
-    ver[v].append(u)
-for i in range(n):
-    if visted[per[i][1]]!=1:
-        res+=per[i][0]
-        dfs(per[i][1])
+    x,y=map(int,input().split())
+    per[x].append(y)
+    per[y].append(x)
+
+res=0
+for i in range(1,n+1):
+    if not visited[i]:
+        res+=dfs(i)
 print(res)
