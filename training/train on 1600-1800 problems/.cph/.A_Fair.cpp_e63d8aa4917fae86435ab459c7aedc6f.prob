@@ -1,0 +1,1 @@
+{"name":"Local: A_Fair","url":"c:\\Work\\codeforces\\training\\train on 1600-1800 problems\\A_Fair.cpp","tests":[{"id":1783431198203,"input":"5 5 4 3\n1 2 4 3 2\n1 2\n2 3\n3 4\n4 1\n4 5\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Work\\codeforces\\training\\train on 1600-1800 problems\\A_Fair.cpp","group":"local","local":true}

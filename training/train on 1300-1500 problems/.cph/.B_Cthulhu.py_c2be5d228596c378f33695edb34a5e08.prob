@@ -1,0 +1,1 @@
+{"name":"Local: B_Cthulhu","url":"c:\\Work\\codeforces\\training\\train on 1300-1500 problems\\B_Cthulhu.py","tests":[{"id":1782825104314,"input":"6 5\n5 6\n4 6\n3 1\n5 1\n1 2\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Work\\codeforces\\training\\train on 1300-1500 problems\\B_Cthulhu.py","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: A_Maze","url":"c:\\Work\\codeforces\\training\\train on 1600-1800 problems\\A_Maze.py","tests":[{"id":1782960946042,"input":"3 4 2\n#..#\n..#.\n#...\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Work\\codeforces\\training\\train on 1600-1800 problems\\A_Maze.py","group":"local","local":true}
