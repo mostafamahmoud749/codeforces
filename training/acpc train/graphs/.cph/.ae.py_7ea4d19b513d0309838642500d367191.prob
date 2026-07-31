@@ -1,0 +1,1 @@
+{"name":"Local: ae","url":"c:\\Work\\codeforces\\training\\acpc train\\graphs\\ae.py","tests":[{"id":1784830377816,"input":"3 3\n><>\nv^v\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Work\\codeforces\\training\\acpc train\\graphs\\ae.py","group":"local","local":true}

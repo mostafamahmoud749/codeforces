@@ -1,0 +1,1 @@
+{"name":"Local: E_Graph_Coloring","url":"c:\\Work\\codeforces\\training\\train on 2100-2200 problems\\E_Graph_Coloring.py","tests":[{"id":1783846905019,"input":"6 3\n2 2 2\n3 1\n5 4\n2 5\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Work\\codeforces\\training\\train on 2100-2200 problems\\E_Graph_Coloring.py","group":"local","local":true}

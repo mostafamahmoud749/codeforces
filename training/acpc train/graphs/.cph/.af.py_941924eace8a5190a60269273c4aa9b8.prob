@@ -1,0 +1,1 @@
+{"name":"Local: af","url":"c:\\Work\\codeforces\\training\\acpc train\\graphs\\af.py","tests":[{"id":1784823875043,"input":"3 3 3\n\n.#.\n###\n##.\n\n.##\n###\n##.\n\n...\n...\n...\n\n1 1\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Work\\codeforces\\training\\acpc train\\graphs\\af.py","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: ah","url":"c:\\Work\\codeforces\\training\\acpc train\\graphs\\ah.py","tests":[{"id":1784838271419,"input":"3 3\n*.*\n.*.\n*.*\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Work\\codeforces\\training\\acpc train\\graphs\\ah.py","group":"local","local":true}
