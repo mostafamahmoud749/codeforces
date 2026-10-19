@@ -1,0 +1,1 @@
+{"name":"Local: n","url":"/home/mostafa/Work/codeforces/training/Slytherin House/STLS/n.cpp","tests":[{"id":1792411015241,"input":"6\n1 5\n1 6\n2\n3\n2\n3\n\n","output":"6 \nEmpty!"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mostafa/Work/codeforces/training/Slytherin House/STLS/n.cpp","group":"local","local":true}
