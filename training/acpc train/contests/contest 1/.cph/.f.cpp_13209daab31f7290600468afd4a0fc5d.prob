@@ -1,0 +1,1 @@
+{"name":"Local: f","url":"/home/mostafa/Work/codeforces/training/acpc train/contests/contest 1/f.cpp","tests":[{"id":1793093809011,"input":"3\n3\n4 3 5\n4\n10 10 10 11\n3\n1 1 1000000000\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mostafa/Work/codeforces/training/acpc train/contests/contest 1/f.cpp","group":"local","local":true}
