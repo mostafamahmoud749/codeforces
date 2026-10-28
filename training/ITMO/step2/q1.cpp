@@ -15,7 +15,7 @@ int main(){
 
     for (int r=0;r<n;r++) {
       cur+=a[r];
-      while (l<=r && cur>s) {
+      while (cur>s) {
         cur-=a[l];
         l++;
       }
