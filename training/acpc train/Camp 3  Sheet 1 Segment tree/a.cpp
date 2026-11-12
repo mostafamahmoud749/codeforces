@@ -10,9 +10,9 @@ struct SegTree {
     std::vector<int> tree;
 
     // Change these based on the problem requirements
-    const int DEFAULT_VALUE = 1e9; // 0 for sum, 1e9 for min, -1e9 for max
+    const int DEFAULT_VALUE = 0; // 0 for sum, 1e9 for min, -1e9 for max
     int merge(int a, int b) {
-        return min(a,b); // Change to std::min(a, b) or std::max(a, b) if needed
+        return a+b; // Change to std::min(a, b) or std::max(a, b) if needed
     }
 
     SegTree(int n) : n(n), tree(4 * n, 0) {}
@@ -30,7 +30,7 @@ struct SegTree {
 
     void update(int node, int start, int end, int idx, int val) {
         if (start == end) {
-            tree[node] = val; // Or tree[node] += val depending on problem
+            tree[node] += val; // Or tree[node] += val depending on problem
             return;
         }
         int mid = start + (end - start) / 2;
@@ -61,23 +61,25 @@ int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
-    int n,q;
-    cin>>n>>q;
-    vector<int> a(n);
-    for (int i=0;i<n;i++){
-        cin>>a[i];
-    }
+    
+    int t;
+    cin>>t;
 
-    SegTree st(n);
-    st.build(a);
+    while (t--) {
+        int n;
+        cin >> n;
 
-    for (int i=0;i<q;i++){
-        int t,l,r;
-        cin>>t>>l>>r;
-        if (t==1){
-            st.update(l-1,r);
-        }else{
-            cout<<st.query(l-1,r-1)<<"\n";
+        SegTree st(n); 
+        ll res=0;
+
+        for (int i=0;i<n;i++) {
+            int x;
+            cin>>x;
+            x-=1;
+
+            res+= st.query(x, n-1);
+            st.update(x,1);
         }
-    }
+        cout<< res<<"\n";
+    } 
 }
